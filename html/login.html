@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/login-style.css">
+    <title>Login to your account</title>
+    <link rel="shortcut icon" href="/img/logo.webp" type="image/x-icon">
+</head>
+
+<body>
+    <button id="backButton">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-envelope-open"></i>
+                    <input name="email" id="email" type="email" autocomplete="on" placeholder="Email"
+                        title="Please enter a valid Email Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input id="PASSWORD" type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="" class="sign-up-form signupCustom">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-envelope-open"></i>
+                    <input name="email" id="email" type="email" autocomplete="on" placeholder="Email"
+                        title="Please enter a valid Email Address" required>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input id="PhoneNumber" name="PhoneNumber" type="tel" placeholder="Phone Number"
+                        pattern="01[3-9]{1}[0-9]{8}" title="Please enter valid phone number in this format: 01xxxxxxxxx"
+                        required>
+                </div>
+                <div class="input-field opti">
+                    <i class="	fad fa-clock"></i>
+                    <label for="shift"></label>
+                    <select name="" id="shift" class="shift opt">
+                        <option value="1">Morning</option>
+                        <option value="2">Day</option>
+                        <option value="3">Auto/None</option>
+                    </select>
+                </div>
+                <div class="input-field opti">
+                    <i class="fas fa-graduation-cap"></i>
+                    <label for="class" id="plchldr"></label>
+                    <select class="cls opt" name="class">
+                        <option value="VI">Class VI</option>
+                        <option value="VII">Class VII</option>
+                        <option value="VII">Class VIII</option>
+                        <option value="IX">Class IX</option>
+                        <option value="X">Class X </option>
+                    </select>
+                </div>
+                <div class="input-field opti">
+                    <i class="fas fa-award"></i>
+                    <select name="section" class="secction opt">
+                        <option value="1">Science</option>
+                        <option value="2">Commerce</option>
+                        <option value="3">Arts</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-id-card"></i>
+                    <input id="roll" name="roll" type="number" placeholder="Roll" required>
+                </div>
+                <div class="input-field pass">
+                    <i class="far fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password" required>
+                </div>
+                <div class="input-field rePass">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Retype Password" id="confirm_password" required>
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of our Club?</h3>
+                    <p>Welcome back! Sign in here.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="/img/login.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to our Club?</h3>
+                    <img src="/img/signup.svg" alt="" class="image signupImg">
+                    <p>Unlock the world of numbers! Join our Math Club for mind-bending challenges. Sign up today!</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/Js/login.js"></script>
+</body>
+
+</html>
